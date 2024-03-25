@@ -35,6 +35,56 @@ CREATE TABLE RAIS_2019_NORDESTE AS SELECT * FROM RAIS_2010_BA WHERE 1=0;
 CREATE TABLE RAIS_2019_MG_ES_RJ AS SELECT * FROM RAIS_2010_MG WHERE 1=0; -- Tabela para MG, ES e RJ juntos
 CREATE TABLE RAIS_2019_CENTRO_OESTE AS SELECT * FROM RAIS_2010_GO WHERE 1=0;
 
+## Para o ano de 2014
+CREATE TABLE rais_2014_ac (
+    Bairros_SP VARCHAR(255),
+    Bairros_Fortaleza VARCHAR(255),
+    Bairros_RJ VARCHAR(255),
+    Causa_Afastamento_1 VARCHAR(255),
+    Causa_Afastamento_2 VARCHAR(255),
+    Causa_Afastamento_3 VARCHAR(255),
+    Motivo_Desligamento VARCHAR(255),
+    CBO_Ocupacao_2002 VARCHAR(255),
+    CNAE_2_0_Classe VARCHAR(255),
+    CNAE_95_Classe VARCHAR(255),
+    Distritos_SP VARCHAR(255),
+    Vinculo_Ativo_31_12 VARCHAR(255),
+    Faixa_Etaria VARCHAR(255),
+    Faixa_Hora_Contrat VARCHAR(255),
+    Faixa_Remun_Dezem_SM VARCHAR(255),
+    Faixa_Remun_Media_SM VARCHAR(255),
+    Faixa_Tempo_Emprego VARCHAR(255),
+    Escolaridade_apos_2005 VARCHAR(255),
+    Qtd_Hora_Contr VARCHAR(255),
+    Idade VARCHAR(255),
+    Ind_CEI_Vinculado VARCHAR(255),
+    Ind_Simples VARCHAR(255),
+    Mes_Admissao VARCHAR(255),
+    Mes_Desligamento VARCHAR(255),
+    Mun_Trab VARCHAR(255),
+    Municipio VARCHAR(255),
+    Nacionalidade VARCHAR(255),
+    Natureza_Juridica VARCHAR(255),
+    Ind_Portador_Defic VARCHAR(255),
+    Qtd_Dias_Afastamento VARCHAR(255),
+    Raca_Cor VARCHAR(255),
+    Regioes_Adm_DF VARCHAR(255),
+    Vl_Remun_Dezembro_Nom VARCHAR(255),
+    Vl_Remun_Dezembro_SM VARCHAR(255),
+    Vl_Remun_Media_Nom VARCHAR(255),
+    Vl_Remun_Media_SM VARCHAR(255),
+    CNAE_2_0_Subclasse VARCHAR(255),
+    Sexo_Trabalhador VARCHAR(255),
+    Tamanho_Estabelecimento VARCHAR(255),
+    Tempo_Emprego VARCHAR(255),
+    Tipo_Admissao VARCHAR(255),
+    Tipo_Estab1 VARCHAR(255),
+    Tipo_Estab2 VARCHAR(255), -- Ajustado para evitar duplicidade
+    Tipo_Defic VARCHAR(255),
+    Tipo_Vinculo VARCHAR(255)
+);
+
+
 #comando para criar as tabelas para cada estado
 CREATE TABLE RAIS_2021_AC (
     bairros_sp VARCHAR(256),
